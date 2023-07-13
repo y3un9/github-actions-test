@@ -11,13 +11,13 @@ on:
   pull_request:
     branches:
       - "develop"
-  schedules:
-    - cron "*/15 * * * *"
+  schedule:
+    - cron: "*/15 * * * *"
 jobs:
   say-hello:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
       - name: Event
-        run: echo "Triggered by: $GITHUB_EVENT_NAME"
+        run: echo "Triggered by: GITHUB_EVENT_NAME"
       - name: Say Hello
         run: echo "Hello World!"
