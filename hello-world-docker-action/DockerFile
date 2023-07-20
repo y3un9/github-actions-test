@@ -1,3 +1,3 @@
 FROM alpine:3.10
-COPY ./hello-world-docker-action/entrypoint.sh /entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
