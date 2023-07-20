@@ -1,4 +1,5 @@
 # Example using a public action
+# name: Hello world docker action
 # on: [push]
 # jobs:
 #   hello_world_job:
@@ -14,6 +15,7 @@
 #         run: echo "The time was ${{ steps.hello.outputs.time }}"
 
 # Example using a private action
+name: Hello world docker action
 on: [push]
 jobs:
   hello_world_job:
